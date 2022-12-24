@@ -1,0 +1,3 @@
+The issue that this repo is meant to reproduce is that the build will issue circular dependency warnings that seem to prevent the code to behave correctly.
+
+Please run `npm run build` to see the warnings.

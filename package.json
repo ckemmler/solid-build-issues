@@ -1,0 +1,44 @@
+{
+	"name": "solid-build-issues",
+	"version": "1.0.0",
+	"description": "solid build issues",
+	"main": "main.js",
+	"scripts": {
+		"dev": "rollup --config rollup.config.js -w",
+		"build": "export environment=production && rollup --config rollup.config.js > release/main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ckemmler/solid-build-issues.git"
+	},
+	"keywords": [
+		"inrupt",
+		"solid",
+		"repro"
+	],
+	"author": "Candide Kemmler",
+	"bugs": {
+		"url": "https://github.com/ckemmler/solid-build-issues/issues"
+	},
+	"homepage": "https://github.com/ckemmler/solid-build-issues#readme",
+	"dependencies": {
+		"@inrupt/solid-client": "^1.23.3",
+		"@inrupt/solid-client-authn-browser": "^1.12.3",
+		"@inrupt/vocab-common-rdf": "^1.0.5",
+		"events": "^3.3.0",
+		"react-native-get-random-values": "^1.8.0"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "latest",
+		"@rollup/plugin-json": "latest",
+		"@rollup/plugin-node-resolve": "latest",
+		"@rollup/plugin-typescript": "latest",
+		"@rollup/plugin-babel": "latest",
+		"rollup": "latest",
+		"rollup-plugin-polyfill": "latest",
+		"rollup-plugin-polyfill-node": "latest",
+		"tslib": "^2.2.0",
+		"typescript": "^4.3.2",
+		"typescript-eslint": "^0.0.1-alpha.0"
+	}
+}
