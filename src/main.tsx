@@ -16,6 +16,7 @@ export default class Repro {
 			clientSecret: "", // <-- Your client secret
 			oidcIssuer: "https://login.inrupt.com",
 		});
+		console.log("are we logged in?", session.info.isLoggedIn);
 		if (session.info.isLoggedIn) {
 			// 3. Your session should now be logged in, and able to make authenticated requests.
 			const response = await session.fetch(session.info.webId || "https://solidcommunity.net/profile/card#me");

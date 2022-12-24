@@ -1,3 +1,18 @@
-The issue that this repo is meant to reproduce is that the build will issue circular dependency warnings that seem to prevent the code to behave correctly.
+# Description
 
-Please run `npm run build` to see the warnings.
+This is a simple repro repo that demonstrates multiple issues I'm encountering while trying to use the inrupt solid client libraries.
+
+## Instructions
+
+1. Clone the repo
+2. `npm install`
+3. `npm run build`
+4. `node main.js` <-- This is where the errors occur You should see the following errors: You should see the following errors:
+
+```shell
+/Users/xxx/work/sekund/solid-build-issues/main.js:5069
+      throw new Error('crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported');
+            ^
+
+Error: crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported
+```

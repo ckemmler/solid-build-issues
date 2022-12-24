@@ -5,7 +5,7 @@
 	"main": "main.js",
 	"scripts": {
 		"dev": "rollup --config rollup.config.js -w",
-		"build": "export environment=production && rollup --config rollup.config.js > release/main.js"
+		"build": "export environment=production && rollup --config rollup.config.js"
 	},
 	"repository": {
 		"type": "git",
