@@ -11,7 +11,7 @@ if you want to view the source visit the plugins github repository
 `;
 
 export default {
-	input: "src/main.tsx",
+	input: "src/main.ts",
 	inlineDynamicImports: true,
 	output: [
 		{
@@ -23,6 +23,6 @@ export default {
 			compact: true,
 		},
 	],
-	// external: ["obsidian", "fs", "os", "path"],
+	external: ["obsidian", "fs", "os", "path"],
 	plugins: [json(), nodeResolve({ browser: true, preferBuiltins: true }), commonjs(), nodePolyfills("path"), typescript({ sourceMap: true })],
 };

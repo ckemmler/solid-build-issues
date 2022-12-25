@@ -23,17 +23,16 @@
 	"homepage": "https://github.com/ckemmler/solid-build-issues#readme",
 	"dependencies": {
 		"@inrupt/solid-client": "^1.23.3",
-		"@inrupt/solid-client-authn-browser": "^1.12.3",
+		"@inrupt/solid-client-authn-node": "^1.12.3",
 		"@inrupt/vocab-common-rdf": "^1.0.5",
-		"events": "^3.3.0",
-		"react-native-get-random-values": "^1.8.0"
+		"events": "^3.3.0"
 	},
 	"devDependencies": {
+		"@rollup/plugin-babel": "latest",
 		"@rollup/plugin-commonjs": "latest",
 		"@rollup/plugin-json": "latest",
 		"@rollup/plugin-node-resolve": "latest",
 		"@rollup/plugin-typescript": "latest",
-		"@rollup/plugin-babel": "latest",
 		"rollup": "latest",
 		"rollup-plugin-polyfill": "latest",
 		"rollup-plugin-polyfill-node": "latest",
